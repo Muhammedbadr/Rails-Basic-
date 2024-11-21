@@ -1,0 +1,24 @@
+<% if @divisions.length > 0  %>
+    <h1>
+        <%= title %>
+        </h1>
+    <Table class="table is-bordered">
+        <thead>
+            <th>Section ID</th>
+            <th>Section Name</th>
+            <%# <th>Section Email</th> %>
+        </thead>
+        <tbody>
+            <% @divisions.each do |division| %>
+                <tr>
+                    <td><%= division.id %></td>
+                    <td><%= division.name %></td>
+                    <%# <td>Division Email</td>
+                    // <td><%= division.email </td> %> 
+                    </tr>
+            <%end%>
+        </tbody>
+    </Table>
+    <% else %>
+    <p>No Divisions Found</p>
+<% end %>

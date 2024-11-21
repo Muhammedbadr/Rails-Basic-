@@ -1,0 +1,16 @@
+<h1>
+    Info about User
+    <%= @user.id %>
+</h1>
+<h1>
+    Name
+    <%= @user.name %>
+</h1>
+<h1>
+    Email
+    <%= @user[:email] %>
+</h1>
+
+<hr>
+
+<%= render partial: "partials/table" , locals:{title: "section table"} %>

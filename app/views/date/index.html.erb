@@ -1,0 +1,5 @@
+<%= form_with url:"/search" , date: {turbo: false}, method: :post do |form|   %>
+        <%= form.label :query , "sersh for :"%>
+        <%= form.text_field :query %>
+        <%= form.submit "Search" %>
+<% end %>
